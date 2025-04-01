@@ -31,7 +31,7 @@ class ControllerAPI(BaseHTTPRequestHandler):
     #APIS GET 
 
     def do_GET(self):
-        persona = Persona('Kevin', 'Calvo', 'kevin@hotmail.com', '2')
+        persona = Persona('Kevin', 'Calvo', 'kevin@hotmail.com', '5')
         #Prueba conexion a base de datos
         if self.path == "/prueba/database":
             connection = database.conectar_base_datos()

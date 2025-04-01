@@ -28,6 +28,7 @@ services:
     depends_on:
       - postgres  #Backend depende de postgres
     volumes:
+      - ./db-init:/docker-entrypoint-initdb.d
       - ./backend:/backend 
     restart: always
 

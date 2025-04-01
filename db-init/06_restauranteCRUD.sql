@@ -67,7 +67,6 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-
 CREATE OR REPLACE FUNCTION consultar_mesas_por_restaurante(
     p_id_restaurante INT
 ) 
@@ -82,6 +81,6 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-drop FUNCTION CONSULTAR_MESAS_POR_RESTAURANTE(INTEGER)
+select * from usuario
 
 

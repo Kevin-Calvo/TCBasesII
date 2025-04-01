@@ -25,7 +25,7 @@ CREATE TABLE Producto (
 
 -- Crear la tabla Mesa
 CREATE TABLE Mesa (
-    IdMesa PRIMARY KEY,
+    IdMesa Int PRIMARY KEY,
     IdRestaurante INT NOT NULL,
     FOREIGN KEY (IdRestaurante) REFERENCES Restaurante(IdRestaurante) ON DELETE CASCADE
 );
